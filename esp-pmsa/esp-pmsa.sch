@@ -1,0 +1,604 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR07
+U 1 1 607071CE
+P 4250 3750
+F 0 "#PWR07" H 4250 3500 50  0001 C CNN
+F 1 "GND" H 4255 3577 50  0000 C CNN
+F 2 "" H 4250 3750 50  0001 C CNN
+F 3 "" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	1    0    0    -1  
+$EndComp
+Text Label 4850 2600 0    50   ~ 0
+SDA
+Text Label 4850 3200 0    50   ~ 0
+U0TX_B
+Text Label 4850 3100 0    50   ~ 0
+U0RX_B
+Text Label 4850 2500 0    50   ~ 0
+SCL
+Wire Wire Line
+	4250 3550 4250 3650
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 6070DFE3
+P 4200 3650
+F 0 "#FLG03" H 4200 3725 50  0001 C CNN
+F 1 "PWR_FLAG" V 4200 3777 50  0000 L CNN
+F 2 "" H 4200 3650 50  0001 C CNN
+F 3 "~" H 4200 3650 50  0001 C CNN
+	1    4200 3650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4250 3650
+Wire Wire Line
+	4250 3650 4250 3750
+$Comp
+L 1_My_Symbols:PMSA003 M1
+U 1 1 6071E0E3
+P 7250 2750
+F 0 "M1" H 6950 3150 50  0000 L CNN
+F 1 "PMSA003" H 7150 2750 50  0000 L CNN
+F 2 "12-Collected-Footprints:PMSA003" H 7300 2750 50  0001 C CNN
+F 3 "~" H 7300 2750 50  0001 C CNN
+F 4 "C124396" H 7250 2750 50  0001 C CNN "LCSC"
+	1    7250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 6072279A
+P 5100 5000
+F 0 "C4" H 5008 4954 50  0000 R CNN
+F 1 "100nF" H 5008 5045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5100 5000 50  0001 C CNN
+F 3 "~" H 5100 5000 50  0001 C CNN
+F 4 "C1525" H 5100 5000 50  0001 C CNN "LCSC"
+F 5 "Samsung Electro-Mechanics" H 5100 5000 50  0001 C CNN "Manufacturer"
+F 6 "CL05B104KO5NNNC" H 5100 5000 50  0001 C CNN "MPN"
+	1    5100 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 60722DA8
+P 8100 2750
+F 0 "C2" H 8215 2796 50  0000 L CNN
+F 1 "10uF" H 8215 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8138 2600 50  0001 C CNN
+F 3 "~" H 8100 2750 50  0001 C CNN
+F 4 "C19702" H 8100 2750 50  0001 C CNN "LCSC"
+F 5 "CL10A106KP8NNNC" H 8100 2750 50  0001 C CNN "MPN"
+F 6 "Samsung Electro-Mechanics" H 8100 2750 50  0001 C CNN "Manufacturer"
+	1    8100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 607231A3
+P 7900 2750
+F 0 "C1" H 7991 2704 50  0000 L CNN
+F 1 "10uF" H 7991 2795 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7938 2600 50  0001 C CNN
+F 3 "~" H 7900 2750 50  0001 C CNN
+F 4 "C19702" H 7900 2750 50  0001 C CNN "LCSC"
+F 5 "CL10A106KP8NNNC" H 7900 2750 50  0001 C CNN "MPN"
+F 6 "Samsung Electro-Mechanics" H 7900 2750 50  0001 C CNN "Manufacturer"
+	1    7900 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 607396A8
+P 7250 3350
+F 0 "#PWR02" H 7250 3100 50  0001 C CNN
+F 1 "GND" H 7255 3177 50  0000 C CNN
+F 2 "" H 7250 3350 50  0001 C CNN
+F 3 "" H 7250 3350 50  0001 C CNN
+	1    7250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 60739F7F
+P 7250 2150
+F 0 "#PWR01" H 7250 2000 50  0001 C CNN
+F 1 "+5V" H 7250 2300 50  0000 C CNN
+F 2 "" H 7250 2150 50  0001 C CNN
+F 3 "" H 7250 2150 50  0001 C CNN
+	1    7250 2150
+	1    0    0    -1  
+$EndComp
+Text Label 6700 2650 2    50   ~ 0
+U0TX_B
+Text Label 6700 2500 2    50   ~ 0
+U0RX_B
+$Comp
+L power:+3V3 #PWR03
+U 1 1 60706822
+P 4150 1750
+F 0 "#PWR03" H 4150 1600 50  0001 C CNN
+F 1 "+3V3" H 4150 1900 50  0000 C CNN
+F 2 "" H 4150 1750 50  0001 C CNN
+F 3 "" H 4150 1750 50  0001 C CNN
+	1    4150 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 1850
+Wire Wire Line
+	4150 1850 4150 1750
+Wire Wire Line
+	4150 1950 4150 1850
+$Comp
+L power:+5V #PWR04
+U 1 1 60705AA7
+P 4350 1750
+F 0 "#PWR04" H 4350 1600 50  0001 C CNN
+F 1 "+5V" H 4350 1900 50  0000 C CNN
+F 2 "" H 4350 1750 50  0001 C CNN
+F 3 "" H 4350 1750 50  0001 C CNN
+	1    4350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 6070CF17
+P 4400 1850
+F 0 "#FLG02" H 4400 1925 50  0001 C CNN
+F 1 "PWR_FLAG" V 4400 1978 50  0000 L CNN
+F 2 "" H 4400 1850 50  0001 C CNN
+F 3 "~" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 6070D469
+P 4100 1850
+F 0 "#FLG01" H 4100 1925 50  0001 C CNN
+F 1 "PWR_FLAG" V 4100 1977 50  0000 L CNN
+F 2 "" H 4100 1850 50  0001 C CNN
+F 3 "~" H 4100 1850 50  0001 C CNN
+	1    4100 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 1850 4150 1850
+Wire Wire Line
+	4350 1750 4350 1850
+Wire Wire Line
+	4400 1850 4350 1850
+Connection ~ 4350 1850
+Wire Wire Line
+	4350 1850 4350 1950
+Wire Wire Line
+	4200 3650 4250 3650
+$Comp
+L power:GND #PWR06
+U 1 1 6074353D
+P 4250 5600
+F 0 "#PWR06" H 4250 5350 50  0001 C CNN
+F 1 "GND" H 4255 5427 50  0000 C CNN
+F 2 "" H 4250 5600 50  0001 C CNN
+F 3 "" H 4250 5600 50  0001 C CNN
+	1    4250 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6074CB79
+P 1000 7000
+F 0 "H1" H 1100 7049 50  0000 L CNN
+F 1 "MP" H 1100 6958 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 1000 7000 50  0001 C CNN
+F 3 "~" H 1000 7000 50  0001 C CNN
+	1    1000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6074E4DA
+P 1500 7000
+F 0 "H2" H 1600 7049 50  0000 L CNN
+F 1 "MP" H 1600 6958 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 1500 7000 50  0001 C CNN
+F 3 "~" H 1500 7000 50  0001 C CNN
+	1    1500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6074E75A
+P 2000 7000
+F 0 "H3" H 2100 7049 50  0000 L CNN
+F 1 "MP" H 2100 6958 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 2000 7000 50  0001 C CNN
+F 3 "~" H 2000 7000 50  0001 C CNN
+	1    2000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6074EA51
+P 2500 7000
+F 0 "H4" H 2600 7049 50  0000 L CNN
+F 1 "MP" H 2600 6958 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 2500 7000 50  0001 C CNN
+F 3 "~" H 2500 7000 50  0001 C CNN
+	1    2500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 607534D7
+P 1750 7350
+F 0 "#PWR08" H 1750 7100 50  0001 C CNN
+F 1 "GND" H 1755 7177 50  0000 C CNN
+F 2 "" H 1750 7350 50  0001 C CNN
+F 3 "" H 1750 7350 50  0001 C CNN
+	1    1750 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 7100 1000 7250
+Wire Wire Line
+	1750 7250 1750 7350
+Wire Wire Line
+	1500 7100 1500 7250
+Wire Wire Line
+	2000 7100 2000 7250
+Wire Wire Line
+	2500 7100 2500 7250
+Wire Wire Line
+	1000 7250 1500 7250
+Connection ~ 1500 7250
+Connection ~ 2000 7250
+Wire Wire Line
+	2000 7250 2500 7250
+Text Label 3750 5050 2    50   ~ 0
+SDA
+Text Label 3750 4950 2    50   ~ 0
+SCL
+Text Label 4850 3000 0    50   ~ 0
+VCC_SENS
+Text Label 4850 2700 0    50   ~ 0
+~PMS_SET
+Text Label 6700 3000 2    50   ~ 0
+~PMS_SET
+Text Label 6700 2850 2    50   ~ 0
+~PMS_RST
+Wire Wire Line
+	6800 2500 6700 2500
+Wire Wire Line
+	6700 2650 6800 2650
+Wire Wire Line
+	6800 2850 6700 2850
+Wire Wire Line
+	6700 3000 6800 3000
+Wire Wire Line
+	4750 2700 4850 2700
+Wire Wire Line
+	4750 3000 4850 3000
+Wire Wire Line
+	4850 3100 4750 3100
+Wire Wire Line
+	4750 3200 4850 3200
+$Comp
+L Device:C_Small C3
+U 1 1 607840AD
+P 4900 5000
+F 0 "C3" H 4808 5046 50  0000 R CNN
+F 1 "1uF" H 4808 4955 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4900 5000 50  0001 C CNN
+F 3 "~" H 4900 5000 50  0001 C CNN
+F 4 "C52923" H 4900 5000 50  0001 C CNN "LCSC"
+F 5 "Samsung Electro-Mechanics" H 4900 5000 50  0001 C CNN "Manufacturer"
+F 6 "CL05A105KA5NQNC" H 4900 5000 50  0001 C CNN "MPN"
+	1    4900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1_My_Symbols:WeMos_D1_mini_Labels U1
+U 1 1 607BCB77
+P 4250 2750
+F 0 "U1" H 3900 3500 50  0000 C CNN
+F 1 "D1 Mini" V 3950 2250 50  0000 C CNN
+F 2 "11-My-Edits:WEMOS_D1_mini_SMT" H 4250 1600 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 2400 1600 50  0001 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3750 2600
+NoConn ~ 3750 2700
+NoConn ~ 4750 2800
+NoConn ~ 4750 2300
+$Comp
+L Device:R R1
+U 1 1 607DFC0D
+P 5400 2500
+F 0 "R1" V 5450 2500 50  0000 C TNN
+F 1 "4K7" V 5400 2500 35  0000 C CNB
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5400 2500 50  0001 C CNN
+F 3 "~" H 5400 2500 50  0001 C CNN
+F 4 "C25900" H 5400 2500 50  0001 C CNN "LCSC"
+	1    5400 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 607F6C2C
+P 5400 2600
+F 0 "R2" V 5300 2600 50  0000 C CNN
+F 1 "4K7" V 5400 2600 35  0000 C CNB
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5400 2600 50  0001 C CNN
+F 3 "~" H 5400 2600 50  0001 C CNN
+F 4 "C25900" H 5400 2600 50  0001 C CNN "LCSC"
+	1    5400 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 5050 3850 5050
+Wire Wire Line
+	3750 4950 3850 4950
+Wire Wire Line
+	1500 7250 1750 7250
+Connection ~ 1750 7250
+Wire Wire Line
+	1750 7250 2000 7250
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 60741EA9
+P 5650 2350
+F 0 "#PWR0102" H 5650 2200 50  0001 C CNN
+F 1 "+3V3" H 5665 2523 50  0000 C CNN
+F 2 "" H 5650 2350 50  0001 C CNN
+F 3 "" H 5650 2350 50  0001 C CNN
+	1    5650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2500 5650 2500
+Wire Wire Line
+	5650 2500 5650 2350
+Wire Wire Line
+	5550 2600 5650 2600
+Wire Wire Line
+	5650 2600 5650 2500
+Connection ~ 5650 2500
+Wire Wire Line
+	7900 4800 7900 4900
+Wire Wire Line
+	8100 4900 8100 4800
+Wire Wire Line
+	8100 4800 8000 4800
+Wire Wire Line
+	8000 5200 8100 5200
+Wire Wire Line
+	8100 5200 8100 5100
+Wire Wire Line
+	8000 5200 7900 5200
+Wire Wire Line
+	7900 5200 7900 5100
+Connection ~ 8000 5200
+$Comp
+L 1_My_Symbols:BME688 U2
+U 1 1 607028BB
+P 4250 5000
+F 0 "U2" H 4550 5350 50  0000 R CNN
+F 1 "BME68x" H 4200 4650 50  0000 R CNN
+F 2 "11-My-Edits:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering" H 5700 4550 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" H 4250 4800 50  0001 C CNN
+F 4 "C125972" H 4250 5000 50  0001 C CNN "LCSC"
+	1    4250 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2900 4850 2900
+Text Label 4850 2900 0    50   ~ 0
+RGB
+Wire Wire Line
+	4750 2400 4850 2400
+Text Label 4850 2400 0    50   ~ 0
+~WAKE
+Text Label 3650 2300 2    50   ~ 0
+~WAKE
+Wire Wire Line
+	3750 2300 3650 2300
+Wire Wire Line
+	4750 2500 5250 2500
+Wire Wire Line
+	4750 2600 5250 2600
+Text Label 6800 5100 2    50   ~ 0
+SDA
+Text Label 6800 5000 2    50   ~ 0
+SCL
+Wire Wire Line
+	6900 5100 6800 5100
+Wire Wire Line
+	6900 5000 6800 5000
+$Comp
+L power:GND #PWR010
+U 1 1 6075628F
+P 7250 5600
+F 0 "#PWR010" H 7250 5350 50  0001 C CNN
+F 1 "GND" H 7255 5427 50  0000 C CNN
+F 2 "" H 7250 5600 50  0001 C CNN
+F 3 "" H 7250 5600 50  0001 C CNN
+	1    7250 5600
+	1    0    0    -1  
+$EndComp
+Text Label 7000 4500 2    50   ~ 0
+VCC_SENS
+Wire Wire Line
+	7250 5350 7250 5500
+NoConn ~ 7600 5000
+$Comp
+L 1_My_Symbols:OPT3001DNPT U3
+U 1 1 6077212D
+P 7250 5000
+F 0 "U3" H 7000 5300 50  0000 L CNN
+F 1 "OPT3001DNPT" H 7300 4700 50  0000 L CNN
+F 2 "11-My-Edits:MultiALS-LTR303-TIOPT3K" H 7450 5200 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fopt3001" H 7450 5300 60  0001 L CNN
+F 4 "C90462" H 7250 5000 50  0001 C CNN "LCSC"
+	1    7250 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 5500
+Wire Wire Line
+	7000 4500 7250 4500
+Wire Wire Line
+	6900 4900 6600 4900
+Wire Wire Line
+	8000 5200 8000 5500
+Wire Wire Line
+	7250 5500 7250 5600
+Wire Wire Line
+	7250 4500 7250 4650
+Wire Wire Line
+	7250 4500 8000 4500
+Wire Wire Line
+	8000 4500 8000 4800
+Connection ~ 7250 4500
+Connection ~ 8000 4800
+Wire Wire Line
+	8000 4800 7900 4800
+Wire Wire Line
+	7250 2150 7250 2200
+Wire Wire Line
+	7250 3250 7250 3300
+Wire Wire Line
+	7250 2200 8000 2200
+Wire Wire Line
+	8000 2200 8000 2500
+Wire Wire Line
+	8000 2500 7900 2500
+Wire Wire Line
+	7900 2500 7900 2650
+Connection ~ 7250 2200
+Wire Wire Line
+	7250 2200 7250 2250
+Wire Wire Line
+	8000 2500 8100 2500
+Wire Wire Line
+	8100 2500 8100 2650
+Connection ~ 8000 2500
+Wire Wire Line
+	8100 2850 8100 3000
+Wire Wire Line
+	8100 3000 8000 3000
+Wire Wire Line
+	8000 3000 8000 3300
+Wire Wire Line
+	8000 3300 7250 3300
+Connection ~ 7250 3300
+Wire Wire Line
+	7250 3300 7250 3350
+Wire Wire Line
+	7900 2850 7900 3000
+Wire Wire Line
+	7900 3000 8000 3000
+Connection ~ 8000 3000
+Text Label 3750 4500 2    50   ~ 0
+VCC_SENS
+Wire Wire Line
+	4250 5400 4250 5500
+Wire Wire Line
+	4250 5500 3350 5500
+Wire Wire Line
+	3350 5500 3350 4850
+Wire Wire Line
+	3350 4850 3850 4850
+Connection ~ 4250 5500
+Wire Wire Line
+	4250 5500 4250 5600
+Wire Wire Line
+	3750 4500 4200 4500
+Wire Wire Line
+	4300 4500 4300 4600
+Wire Wire Line
+	4200 4500 4200 4600
+Connection ~ 4200 4500
+Wire Wire Line
+	4200 4500 4300 4500
+Wire Wire Line
+	5100 4900 5100 4800
+Wire Wire Line
+	5100 4800 5000 4800
+Wire Wire Line
+	5000 4800 5000 4500
+Wire Wire Line
+	5000 4500 4300 4500
+Connection ~ 4300 4500
+Wire Wire Line
+	4900 4900 4900 4800
+Wire Wire Line
+	4900 4800 5000 4800
+Connection ~ 5000 4800
+Wire Wire Line
+	4900 5100 4900 5200
+Wire Wire Line
+	4900 5200 5000 5200
+Wire Wire Line
+	5100 5200 5100 5100
+Wire Wire Line
+	5000 5200 5000 5500
+Wire Wire Line
+	5000 5500 4250 5500
+Connection ~ 5000 5200
+Wire Wire Line
+	5000 5200 5100 5200
+Wire Wire Line
+	8000 5500 7250 5500
+Wire Wire Line
+	3850 5150 3750 5150
+Text Label 3750 5150 2    50   ~ 0
+VCC_SENS
+Wire Wire Line
+	6600 5500 7250 5500
+Wire Wire Line
+	6600 4900 6600 5500
+$Comp
+L Device:C_Small C5
+U 1 1 607933B6
+P 7900 5000
+F 0 "C5" H 7808 5046 50  0000 R CNN
+F 1 "1uF" H 7808 4955 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7900 5000 50  0001 C CNN
+F 3 "~" H 7900 5000 50  0001 C CNN
+F 4 "C52923" H 7900 5000 50  0001 C CNN "LCSC"
+F 5 "Samsung Electro-Mechanics" H 7900 5000 50  0001 C CNN "Manufacturer"
+F 6 "CL05A105KA5NQNC" H 7900 5000 50  0001 C CNN "MPN"
+	1    7900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 60793155
+P 8100 5000
+F 0 "C6" H 8008 5046 50  0000 R CNN
+F 1 "100nF" H 8008 4955 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8100 5000 50  0001 C CNN
+F 3 "~" H 8100 5000 50  0001 C CNN
+F 4 "C1525" H 8100 5000 50  0001 C CNN "LCSC"
+F 5 "Samsung Electro-Mechanics" H 8100 5000 50  0001 C CNN "Manufacturer"
+F 6 "CL05B104KO5NNNC" H 8100 5000 50  0001 C CNN "MPN"
+	1    8100 5000
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
