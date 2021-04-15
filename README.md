@@ -1,6 +1,5 @@
 # esp-pmsa
-[![Build Status](https://travis-ci.com/neg2led/esp-pmsa.svg?branch=master)](https://travis-ci.com/neg2led/esp-pmsa)
-
+[![pages build](https://github.com/neg2led/esp-pmsa/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/neg2led/esp-pmsa/actions/workflows/build-and-publish.yml)
 
 ![KiCad raytraced board render](assets/esp-pmsa.png)
 
