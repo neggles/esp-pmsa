@@ -45,7 +45,7 @@ Connection ~ 6000 3750
 Wire Wire Line
 	6000 3750 6000 3850
 $Comp
-L 1_My_Symbols:PMSA003 M1
+L esp-pmsa-rescue:PMSA003-1_My_Symbols M1
 U 1 1 6071E0E3
 P 9000 2750
 F 0 "M1" H 8700 3150 50  0000 L CNN
