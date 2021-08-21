@@ -3,6 +3,7 @@
 
 ![KiCad raytraced board render](assets/esp-pmsa.png)
 
+![KiCad raytraced board render](assets/esp-pmsa-bottom.png)
 
 ## Repository Structure
 - `esp-pmsa` contains the main schematics and board drawing

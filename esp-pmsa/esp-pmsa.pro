@@ -1,4 +1,4 @@
-update=10/08/2021 8:32:27 PM
+update=21/08/2021 2:40:54 PM
 version=1
 last_client=kicad
 [general]
@@ -42,8 +42,8 @@ TrackWidth2=0.127
 TrackWidth3=0.1524
 TrackWidth4=0.254
 TrackWidth5=0.3175
-TrackWidth6=0.4
-TrackWidth7=0.6
+TrackWidth6=0.381
+TrackWidth7=0.508
 TrackWidth8=0.762
 ViaDiameter1=0.6
 ViaDrill1=0.3
@@ -211,9 +211,9 @@ Name=Back
 Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.Adhes]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.B.Paste]
 Enabled=1
 [pcbnew/Layer.F.Paste]
@@ -243,7 +243,7 @@ Enabled=1
 [pcbnew/Layer.F.CrtYd]
 Enabled=1
 [pcbnew/Layer.B.Fab]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
@@ -262,19 +262,19 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=USB_D
-Clearance=0.1524
+Clearance=0.254
 TrackWidth=0.1524
 ViaDiameter=0.6
 ViaDrill=0.3
 uViaDiameter=0.6858
 uViaDrill=0.3302
 dPairWidth=0.1524
-dPairGap=0.1524
+dPairGap=0.127
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=VCC
 Clearance=0.127
-TrackWidth=0.2
+TrackWidth=0.1524
 ViaDiameter=0.6
 ViaDrill=0.3
 uViaDiameter=0.6858
@@ -284,8 +284,8 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=VIN
-Clearance=0.254
-TrackWidth=0.4
+Clearance=0.1524
+TrackWidth=0.1524
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.6858
