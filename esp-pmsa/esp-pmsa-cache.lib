@@ -276,6 +276,24 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Graphic_SYM_Radio_Waves_Small
+#
+DEF Graphic_SYM_Radio_Waves_Small #SYM 0 40 Y N 1 F N
+F0 "#SYM" 0 140 50 H I C CNN
+F1 "Graphic_SYM_Radio_Waves_Small" 0 -125 50 H I C CNN
+F2 "" 0 -175 50 H I C CNN
+F3 "" 30 -200 50 H I C CNN
+DRAW
+A 0 0 22 266 -266 0 1 0 N 20 10 20 -10
+A 0 0 36 337 -337 0 1 0 N 30 20 30 -20
+A 0 0 22 1534 -1534 0 1 0 N -20 10 -20 -10
+A 0 0 36 -1463 1463 0 1 0 N -30 -20 -30 20
+C 0 0 10 0 1 0 F
+P 4 0 1 10 -100 -75 100 -75 0 100 -100 -75 f
+P 4 0 1 0 -20 -60 20 -60 0 0 -20 -60 F
+ENDDRAW
+ENDDEF
+#
 # Mechanical_MountingHole_Pad
 #
 DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
