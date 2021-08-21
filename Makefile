@@ -21,7 +21,7 @@ build/esp-pmsa.sch: esp-pmsa/esp-pmsa.kicad_pcb build
 
 build/esp-pmsa-panel.kicad_pcb: build/esp-pmsa.kicad_pcb build
 	kikit panelize tightgrid \
-		--gridsize 2 1 --space 3 --panelsize 60 120 --mousebites 0.5 1 0.25 \
+		--gridsize 1 2 --space 3 --panelsize 100 60 --mousebites 0.5 1 0.25 \
 		--vtabs 3 --htabs 3 --tabwidth 5 --tabheight 5 \
 		--fiducials 10 2.5 1 2 --tooling 5 2.5 1.5 \
 		--radius $(RADIUS) $< $@
