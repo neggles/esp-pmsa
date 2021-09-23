@@ -52,6 +52,8 @@ out/
 # End of https://www.toptal.com/developers/gitignore/api/kicad,visualstudiocode
 
 # Build outputs
+esp-pmsa/jlcpcb
+esp-pmsa/esp-pmsa-backups
 build
 fab
 
@@ -62,7 +64,6 @@ fab
 .secrets
 
 # alternates
-EltekController/alternate
 kikit-docker-jlcfab.sh
 
 # logs
