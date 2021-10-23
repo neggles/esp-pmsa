@@ -6,8 +6,8 @@
 
   (title_block
     (title "ESP-PMSA environmental sensor")
-    (date "2021-08-11")
-    (rev "1")
+    (date "2021-10-15")
+    (rev "3")
     (company "neggl.es")
     (comment 1 "ESP32-C3 version")
   )
